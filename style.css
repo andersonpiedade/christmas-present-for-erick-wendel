@@ -1,0 +1,62 @@
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+	background: black;
+}
+
+.txt {
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: green;
+	font-size: 20px;
+	height: 180px;
+	width: 500px;
+	border: 2px solid #fff;
+	text-align: center;
+	font-family: cursive;
+}
+
+.txt h1 {
+	text-shadow: 2px 2px 3px #11ff00;
+}
+
+.txt h2 {
+	color: #11ff00;
+}
+
+
+.heart {
+	background: red;
+	position: relative;
+	height: 100px;
+	width: 100px;
+	transform: rotate(-45deg);
+	margin-top: 100px;
+}
+
+.heart::after {
+	background: inherit;
+	border-radius: 50%;
+	content: '';
+	position: absolute;
+	top: -50%;
+	left: 0;
+	height: 100px;
+	width: 100px;
+}
+
+.heart::before {
+	background: inherit;
+	border-radius: 50%;
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -50%;
+	height: 100px;
+	width: 100px;
+}
